@@ -1,0 +1,388 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/lato400.woff2) format('woff2'),
+    url(../fonts/lato400.woff) format('woff'),
+    url(../fonts/lato400.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/lato500.woff2) format('woff2'),
+    url(../fonts/lato500.woff) format('woff'),
+    url(../fonts/lato500.ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/lato600.woff2) format('woff2'),
+    url(../fonts/lato600.woff) format('woff'),
+    url(../fonts/lato600.ttf) format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/lato700.woff2) format('woff2'),
+    url(../fonts/lato700.woff) format('woff'),
+    url(../fonts/lato700.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/lato800.woff2) format('woff2'),
+    url(../fonts/lato800.woff) format('woff'),
+    url(../fonts/lato800.ttf) format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+body {
+  font-family: Lato, Helvetica, Arial, Sans-Serif;
+  font-size: 1em;
+  line-height: 1.25em;
+  color: #161616;
+  background-color: #fff;
+  position: relative;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  max-width: 1290px;
+}
+.image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.link {
+  color: #fff;
+  text-decoration: none;
+}
+.link--active {
+  color: #556e8d;
+}
+.content {
+  padding-top: 72px;
+  padding-bottom: 66px;
+  background-color: #f4f5f9;
+}
+.content__back {
+  margin-bottom: 64px;
+}
+.content__typo {
+  width: 91.66%;
+}
+@media screen and (max-width: 1000px) {
+  .content {
+    padding-top: 52px;
+    padding-bottom: 0;
+    font-size: 0.875em;
+  }
+  .content__back {
+    margin-bottom: 52px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .content {
+    padding-top: 48px;
+  }
+  .content__back {
+    margin-bottom: 48px;
+  }
+  .content__typo {
+    width: 100%;
+  }
+}
+.typo h1,
+.typo h2 {
+  font-weight: 800;
+}
+.typo h1,
+.typo p,
+.typo ul {
+  margin-bottom: 54px;
+}
+.typo h1 {
+  font-size: 4em;
+  line-height: 1.1875em;
+}
+.typo h2 {
+  margin-bottom: 26px;
+  font-size: 2.25em;
+  line-height: 1.194444444444444em;
+}
+.typo li,
+.typo p {
+  font-size: 1.125em;
+  line-height: 1.5em;
+}
+.typo ul li {
+  padding-left: 10px;
+  position: relative;
+}
+.typo ul li:before {
+  content: '-';
+  position: absolute;
+  left: 0;
+}
+.typo a {
+  color: #2551eb;
+}
+@media screen and (max-width: 640px) {
+  .typo h1,
+  .typo p,
+  .typo ul {
+    margin-bottom: 32px;
+  }
+  .typo h1 {
+    font-size: 3em;
+    line-height: 1.333333333333333em;
+  }
+  .typo h2 {
+    margin-bottom: 16px;
+    font-size: 1.875em;
+    line-height: 1.2em;
+  }
+}
+@media screen and (max-width: 640px) {
+  .typo h1,
+  .typo p,
+  .typo ul {
+    margin-bottom: 24px;
+  }
+  .typo h1 {
+    font-size: 2.5em;
+    line-height: 1.4em;
+  }
+  .typo h2 {
+    font-size: 1.5em;
+    line-height: 1.25em;
+  }
+}
+.back {
+  padding-left: 22px;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.125em;
+  color: #161616;
+  text-decoration: none;
+  background-image: url(../images/back.svg);
+  background-size: 18px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.footer {
+  margin-top: auto;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  color: #fff;
+  background-color: #1b2b3f;
+}
+.footer__container {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.footer-menu,
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer-menu__item {
+  margin-left: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .footer__copyrights {
+    text-align: center;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    font-size: 0.875em;
+    opacity: 0.666;
+  }
+  .footer__menu {
+    margin-bottom: 24px;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+@media screen and (max-width: 440px) {
+  .footer-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .footer-menu__item {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .footer-menu__item:last-child {
+    margin-bottom: 0;
+  }
+}
