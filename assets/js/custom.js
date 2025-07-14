@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', function () {
   const setDomain = () => {
     const domain = window.location.hostname;
     const subdomain = window.location.hostname.split(".")[0];
-    subdomain_print = subdomain === 'www' ? domain : subdomain;
+    const subdomain_print = subdomain === 'www' ? domain : subdomain;
 
     const $domainInner = document.querySelectorAll('.domain');
 
